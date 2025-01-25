@@ -1,13 +1,14 @@
 import './App.css'
 import {ToDoListItem} from "./ToDoListItem.tsx";
+import {HomeWorkTasks} from "./HomeWorkTasks.tsx";
 
-export type Tasks = {
+export type MainTasks = {
 	id: number
 	title: string
 	isDone: boolean
 }
 
-const Task1: Tasks[] = [
+const Task1: MainTasks[] = [
 	{id: 1, title: "HTML&CSS", isDone: true},
 	{id: 2, title: "JS", isDone: true},
 	{id: 3, title: "ReactJS", isDone: false},
@@ -21,8 +22,10 @@ const Task1: Tasks[] = [
 export const App = () => {
 	return (
 		<div className="app">
-			<ToDoListItem title={"What to learn"} tasks={Task1} date={"27.07.2027"}/>
+			{/*<ToDoListItem title={"What to learn"} tasks={Task1} date={"27.07.2027"}/>*/}
+			<HomeWorkTasks/>
 		</div>
+		
 	)
 }
 
