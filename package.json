@@ -1,6 +1,7 @@
 {
     "name": "todolist-incubator",
     "private": true,
+    "homepage": "https://vladosdeveloper.github.io/todolist-incubator",
     "version": "0.0.0",
     "type": "module",
     "scripts": {

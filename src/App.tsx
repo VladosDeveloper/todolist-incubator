@@ -1,5 +1,4 @@
 import './App.css'
-import {ToDoListItem} from "./ToDoListItem.tsx";
 import {HomeWorkTasks} from "./HomeWorkTasks.tsx";
 
 export type MainTasks = {
@@ -22,7 +21,6 @@ const Task1: MainTasks[] = [
 export const App = () => {
 	return (
 		<div className="app">
-			{/*<ToDoListItem title={"What to learn"} tasks={Task1} date={"27.07.2027"}/>*/}
 			<HomeWorkTasks/>
 		</div>
 		
