@@ -1,9 +1,9 @@
-import {Tasks} from "./App.tsx";
 import {Button} from "./Button.tsx";
+import {MainTasks} from "./App.tsx";
 
 type Props = {
 	title: string
-	tasks: Tasks[]
+	tasks: MainTasks[]
 	date?: string
 }
 
@@ -31,7 +31,7 @@ export const ToDoListItem = ({title, date, tasks}: Props) => {
 					})}
 				</ul>)
 			}
-			
+	
 			
 			<div>
 				<Button title={"All"}/>

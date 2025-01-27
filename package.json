@@ -1,16 +1,14 @@
 {
     "name": "todolist-01",
     "private": true,
-    "homepage": "https://VladosDeveloper.github.io/todolist-incubator",
     "version": "0.0.0",
     "type": "module",
     "scripts": {
         "dev": "vite --port 3000",
-        "build": "tsc -b && vite build",
+        "build": "vite build",
+        "deploy": "gh-pages -d dist",
         "test": "vitest",
-        "preview": "vite preview",
-        "predeploy": "pnpm run build",
-        "deploy": "gh-pages -d build"
+        "preview": "vite preview"
     },
     "dependencies": {
         "gh-pages": "^6.3.0",
